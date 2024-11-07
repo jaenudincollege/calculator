@@ -1,6 +1,14 @@
 const buttons = document.querySelectorAll("button");
 const display = document.querySelector(".display");
 
+const addition = (a, b) => a + b;
+const subtraction = (a, b) => a - b;
+const multiplication = (a, b) => a * b;
+const division = (a, b) => a / b;
+const modulo = (a, b) => a % b;
+
+const calc = (operator, a, b) => operator(a, b);
+
 for (const btn of buttons) {
   btn.addEventListener("click", (e) => {
     const input = btn.textContent;
