@@ -1,6 +1,10 @@
 const buttons = document.querySelectorAll("button");
 const display = document.querySelector(".display");
 
+let currentInput = "";
+let operator = null;
+let firstOperand = null;
+
 const addition = (a, b) => a + b;
 const subtraction = (a, b) => a - b;
 const multiplication = (a, b) => a * b;
